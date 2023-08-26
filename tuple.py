@@ -9,3 +9,6 @@ print(make_correct) # >>> (1,)
 
 del (1,)[0] # TypeError: 'tuple' object doesn't support item deletion
 # 요소는 변경될 수 없다.
+
+omission = 1,2,3
+print(omission) # >>> '(1, 2, 3)'
