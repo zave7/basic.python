@@ -11,11 +11,11 @@ x = sympy.symbols("x")
 y, z = sympy.symbols("y, z")
 
 ## Eq : a와 b가 같다는 방정식
-f_1 = sympy.Eq(1, 2)
-f_2 = sympy.Eq(x * Fraction(2, 5), 1760)
+function_1 = sympy.Eq(1, 2)
+function_2 = sympy.Eq(x * Fraction(2, 5), 1760)
 
 ## solve : 방정식에서 미지수의 해를 구하여 반환, 방정식의 해는 여러개일 수 있으므로 리스트로 반환
-result_one = sympy.solve(f_2) # [4400]
+result_one = sympy.solve(function_2) # [4400]
 result_two = sympy.solve(sympy.Eq(x*x, 4)) # [-2, 2]
 
 ### 미지수가 2개 이상이면 딕셔너리로 반환
