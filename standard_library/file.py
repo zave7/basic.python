@@ -18,9 +18,11 @@ data = {
     "key": "value"
 }
 
+## dump : 직렬화
 with open("./file/test1.txt", "wb") as file_pickle:
     pickle.dump(data, file_pickle)
 
+## load : 역직렬화
 with open("./file/test1.txt", "rb") as file_pickle_read:
     data = pickle.load(file_pickle_read) # {'key': 'value'}
 
